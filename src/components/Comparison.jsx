@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle } from 'lucide-react';
+import Button from '../ui/button';  
 
 const Comparison = () => {
   const traditionalItems = [
@@ -23,12 +24,10 @@ const Comparison = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#FEFAF6] py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <div className="inline-block bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium mb-8">
-            OUR CLIENT'S
-          </div>
+          <Button text={"OUR CLIENT'S"}/>
           
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Traditional outreach vs AI-powered sales<br />
@@ -36,53 +35,154 @@ const Comparison = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        {/* Mobile layout - stacked with VS image in middle */}
+        <div className="flex flex-col lg:hidden">
           {/* Traditional Outreach */}
-          <div className="bg-orange-50 rounded-2xl p-8 relative">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Traditional outreach</h3>
-            
-            <p className="text-gray-600 mb-8">
-              From endless back-and-forth to missed deadlines and hidden risks, traditional contract management is outdated. Our AI automates the heavy lifting—so your team can stay compliant, and focus on what matters.
-            </p>
+          <div className="bg-[#FAEBDC] rounded-t-2xl p-8 relative flex flex-col h-full">
+            <div className="flex-grow">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Traditional outreach</h3>
+              
+              <p className="text-gray-600 mb-8">
+                From endless back-and-forth to missed deadlines and hidden risks, traditional contract management is outdated. Our AI automates the heavy lifting—so your team can stay compliant, and focus on what matters.
+              </p>
 
-            <div className="space-y-4 mb-8">
-              {traditionalItems.map((item, index) => (
-                <div key={index} className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-red-500" />
-                  <span className="text-gray-700">{item}</span>
-                </div>
-              ))}
+              <div className="space-y-4 mb-8">
+                {traditionalItems.map((item, index) => (
+                  <div key={index} className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-red-500" />
+                    <span className="text-gray-700">{item}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-
-            <div className="w-32 h-32 mx-auto bg-gray-200 rounded-lg flex items-center justify-center">
-              <span className="text-gray-400 text-xs">Stressed Person</span>
+            
+            <div className="mt-auto pt-4 -mx-8 -mb-8">
+              <img 
+                src="/assets/images/stressed.png" 
+                alt="Stressed Person" 
+                className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] mx-auto object-contain"
+              />
             </div>
           </div>
+          
+          {/* VS Image for Mobile - no gap between cards */}
+          <div className="flex justify-center bg-[#FEFAF6]">
+            <img 
+              src="/assets/images/versesmobile.png" 
+              alt="VS" 
+              className="w-[213.46px] h-[127.76px] mx-auto -mt-2 -mb-2"
+            />
+          </div>
+          
+          {/* AI-Powered Sales - no gap */}
+          <div className="relative rounded-b-2xl p-[2px] bg-gradient-to-b from-[#FE6037] via-[#77C6B3] to-[#3861FA] flex flex-col h-full">
+            <div className="bg-white rounded-[calc(1rem-2px)] p-8 flex flex-col h-full">
+              <div className="flex-grow">
+                <div className="flex items-center space-x-2 mb-6">
+                  <img 
+                    src="/assets/logos/main-logo.png" 
+                    alt="With AI sales" 
+                    className="h-8" 
+                  />
+                </div>
+                
+                <p className="text-gray-600 mb-8">
+                  From endless back-and-forth to missed deadlines and hidden risks, traditional contract management is outdated. Our AI automates the heavy lifting—so your team can stay compliant, and focus on what matters.
+                </p>
 
-          {/* AI-Powered Sales */}
-          <div className="bg-white rounded-2xl p-8 border-2 border-orange-500 relative">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-6 h-6 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs">△</span>
+                <div className="space-y-4 mb-8">
+                  {aiItems.map((item, index) => (
+                    <div key={index} className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span className="text-gray-700">{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900">With AI sales</h3>
+
+              <div className="mt-auto pt-4 -mx-8 -mb-8">
+                <img 
+                  src="/assets/images/happyrobot.png" 
+                  alt="Happy AI Robot" 
+                  className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] mx-auto object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop layout - side by side with VS image in middle */}
+        <div className="hidden lg:flex items-start"> {/* Changed from items-stretch to items-start */}
+          {/* Traditional Outreach */}
+          <div className="bg-[#FAEBDC] rounded-l-2xl p-8 relative flex flex-col h-full flex-1">
+            <div className="flex-grow">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Traditional outreach</h3>
+              
+              <p className="text-gray-600 mb-8">
+                From endless back-and-forth to missed deadlines and hidden risks, traditional contract management is outdated. Our AI automates the heavy lifting—so your team can stay compliant, and focus on what matters.
+              </p>
+
+              <div className="space-y-4 mb-8">
+                {traditionalItems.map((item, index) => (
+                  <div key={index} className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-red-500" />
+                    <span className="text-gray-700">{item}</span>
+                  </div>
+                ))}
+              </div>
             </div>
             
-            <p className="text-gray-600 mb-8">
-              From endless back-and-forth to missed deadlines and hidden risks, traditional contract management is outdated. Our AI automates the heavy lifting—so your team can stay compliant, and focus on what matters.
-            </p>
-
-            <div className="space-y-4 mb-8">
-              {aiItems.map((item, index) => (
-                <div key={index} className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-gray-700">{item}</span>
-                </div>
-              ))}
+            <div className="mt-auto pt-4 -mx-8 -mb-8">
+              <img 
+                src="/assets/images/stressed.png" 
+                alt="Stressed Person" 
+                className="w-full max-w-[400px] mx-auto object-contain"
+              />
             </div>
+          </div>
+          
+          {/* VS Image for Desktop - no gap and aligned to top */}
+          <div className="flex justify-center" style={{ width: '174px' }}>
+            <img 
+              src="/assets/images/versesdesktop.png" 
+              alt="VS" 
+              className="w-[174px] h-[98px] -ml-[1px] -mr-[1px] self-start" /* Added self-start */
+            />
+          </div>
+          
+          {/* AI-Powered Sales - no gap */}
+          <div className="relative rounded-r-2xl p-[2px] bg-gradient-to-b from-[#FE6037] via-[#77C6B3] to-[#3861FA] flex flex-col h-full flex-1">
+            <div className="bg-white rounded-[calc(1rem-2px)] p-8 flex flex-col h-full">
+              <div className="flex-grow">
+                <div className="flex items-center space-x-2 mb-6">
+                  <img 
+                    src="/assets/logos/main-logo.png" 
+                    alt="With AI sales" 
+                    className="h-8" 
+                  />
+                </div>
+                
+                <p className="text-gray-600 mb-8">
+                  From endless back-and-forth to missed deadlines and hidden risks, traditional contract management is outdated. Our AI automates the heavy lifting—so your team can stay compliant, and focus on what matters.
+                </p>
 
-            <div className="w-32 h-32 mx-auto bg-gray-200 rounded-lg flex items-center justify-center">
-              <span className="text-gray-400 text-xs">Happy AI Robot</span>
+                <div className="space-y-4 mb-8">
+                  {aiItems.map((item, index) => (
+                    <div key={index} className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span className="text-gray-700">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-auto pt-4 -mx-8 -mb-8">
+                <img 
+                  src="/assets/images/happyrobot.png" 
+                  alt="Happy AI Robot" 
+                  className="w-full max-w-[400px] mx-auto object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
