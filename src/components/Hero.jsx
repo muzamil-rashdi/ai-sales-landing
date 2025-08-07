@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Button from '../ui/button';  
+
 const peopleImages = [
   {
     src: "/assets/images/image1.png",
@@ -29,9 +31,7 @@ const Hero = () => {
       <div className="max-w-6xl mx-auto">
         {/* Text Section */}
         <div className="text-center mb-16">
-          <div className="inline-block bg-[#FE6037] text-white font-medium px-4 py-2 rounded-md text-sm mb-8">
-            BUSINESS & SOLUTION
-          </div>
+          <Button text={"BUSINESS & SOLUTION"}/>
 
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-8 leading-tight">
             Let AI handle outreach, So<br />
@@ -45,7 +45,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-medium transition-colors">
+            <button  className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-medium transition-colors">
               Let's talk
             </button>
             <button className="border border-orange-500 text-orange-500 hover:bg-orange-50 px-8 py-4 rounded-full font-medium transition-colors">

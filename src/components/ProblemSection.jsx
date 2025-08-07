@@ -1,28 +1,25 @@
 import React from 'react';
+import Button from '../ui/button';
 
 const ProblemSection = () => {
   return (
-    <section className="bg-white py-20 px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#FEFAF6] py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left content column */}
           <div>
-            <div className="inline-block bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium mb-8">
-              FACING CHALLENGES
-            </div>
-            
+            <Button text={"FACING CHALLENGES"}/>
             <h2 className="text-4xl font-bold text-gray-900 mb-8">
               Manual outreach work is<br />
               slowing you down.<br />
               Here's how we're fixing it.
             </h2>
-            
             <p className="text-lg text-gray-600 mb-8">
               Cold outreach is time-consuming and hard to scale. Writing emails, remembering 
               follow-ups, and scheduling calls eats up your day — especially when you're 
               doing it all yourself. For busy founders and small teams, it quickly becomes a 
               drain on time, energy, and growth.
             </p>
-
             <div className="space-y-4 mb-8">
               {[
                 "Comment and tag teammates directly within contracts",
@@ -35,22 +32,40 @@ const ProblemSection = () => {
                 </div>
               ))}
             </div>
-
             <button className="border border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-3 rounded-full font-medium transition-colors">
               Learn more
             </button>
           </div>
 
+          {/* Right image column */}
           <div className="relative">
-            <div className="bg-gray-100 rounded-2xl p-8 relative">
-              <div className="absolute top-4 right-4 space-y-2">
-                <div className="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">LOST OPPORTUNITIES</div>
-                <div className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">LACK OF EXPERTISE</div>
-                <div className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">LIMITED SUCCESS</div>
-              </div>
+            <div className="relative w-full aspect-[510/534] max-w-[510px] mx-auto">
+              {/* Black and white main image */}
+              <img 
+                src="/assets/images/prbimage.png" 
+                alt="Problem illustration"
+                className="w-full h-full object-cover filter grayscale rounded-lg"
+              />
               
-              <div className="w-48 h-48 mx-auto bg-gray-200 rounded-lg flex items-center justify-center">
-                <span className="text-gray-400">Stressed Person</span>
+              {/* Gradient overlay */}
+              <div 
+                className="absolute inset-0"
+                style={{
+                  background: 'linear-gradient(180deg, rgba(254, 96, 55, 0) 0%, rgba(254, 96, 55, 0.2) 100%)'
+                }}
+              />
+              
+              {/* Second image with responsive positioning */}
+              <div className="absolute z-10 w-[47%] max-w-[240px] aspect-[240/256] 
+                            top-[-22%] right-[0%]  /* Mobile positioning - adjusted to stay inside */
+                            sm:top-[-2%] sm:right-[-5%]  /* Small tablet positioning */
+                            md:top-[-10%] md:right-[-10%]  /* Desktop positioning */
+                            lg:top-[-11%] lg:right-[-11%]">  
+                <img 
+                  src="/assets/images/prbimage2.png" 
+                  alt="Additional illustration"
+                  className="w-full h-full object-contain drop-shadow-lg"
+                />
               </div>
             </div>
           </div>
