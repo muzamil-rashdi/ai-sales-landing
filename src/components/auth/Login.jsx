@@ -22,6 +22,8 @@ const fields = [
 ];
 
 return (
+  <>
+ 
   <AuthLayout
     title="Sign in to your account"
     footer={
@@ -40,6 +42,7 @@ return (
       showForgotPassword={true}
     />
   </AuthLayout>
+</>
 );
 };
 
