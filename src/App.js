@@ -17,42 +17,42 @@ import SignUp from './components/auth/SignUp';
 import ResetPassword from './components/auth/ResetPassword';
 
 function AppWrapper() {
-  const location = useLocation();
-  const isAuthPage = ['/login', '/signup', '/reset-password'].includes(location.pathname);
+const location = useLocation();
+const isAuthPage = ['/login', '/signup', '/reset-password'].includes(location.pathname);
 
-  return (
-    <div className="min-h-screen bg-[#FEFAF6]">
-      {!isAuthPage && <Header />}
-      <Routes>
-        <Route path="/" element={
-          <main className="pt-16 ">
-            <Hero />
-            <TrustedBy />
-            <ProblemSection />
-            <Comparison />
-            <HowItWorks />
-            <VideoDemo />
-            <About />
-            <Testimonials />
-            <CaseStudies />
-            <CTA />
-          </main>
-        }/>
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/reset-password" element={<ResetPassword />} />
-      </Routes>
-      {!isAuthPage && <Footer />}
-    </div>
-  );
+return (
+  <div className="min-h-screen bg-[#FEFAF6]">
+    {!isAuthPage && <Header />}
+    <Routes>
+      <Route path="/" element={
+        <main className="pt-16 ">
+          <Hero />
+          <TrustedBy />
+          <ProblemSection />
+          <Comparison />
+          <HowItWorks />
+          <VideoDemo />
+          <About />
+          <Testimonials />
+          <CaseStudies />
+          <CTA />
+        </main>
+      }/>
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/reset-password" element={<ResetPassword />} />
+    </Routes>
+    {!isAuthPage && <Footer />}
+  </div>
+);
 }
 
 function App() {
-  return (
-    <Router>
-      <AppWrapper />
-    </Router>
-  );
+return (
+  <Router>
+    <AppWrapper />
+  </Router>
+);
 }
 
 export default App;
