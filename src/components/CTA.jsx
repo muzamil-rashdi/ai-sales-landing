@@ -4,7 +4,7 @@ const CTA = () => {
   return (
     <section className="bg-orange-500 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
-        <div className="inline-block bg-orange-400 text-white px-4 py-2 rounded-full text-sm font-medium mb-8">
+        <div className="inline-block bg-white text-orange-400 px-4 py-2 rounded-md text-sm font-medium mb-8">
           READY TO ELEVATE
         </div>
         
@@ -23,15 +23,13 @@ const CTA = () => {
         </div>
 
         <div className="relative">
-          <div className="absolute left-0 bottom-0 w-32 h-32 bg-gray-200 rounded-lg opacity-50">
-            <span className="text-gray-400 text-xs p-2">Team Photo</span>
-          </div>
+
           
           <div className="flex justify-center items-end space-x-4">
             <div className="w-24 h-12 bg-blue-600 rounded-t-full"></div>
             <div className="w-24 h-16 bg-yellow-400 rounded-t-full"></div>
             <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center text-white text-xs">
-              UI
+               
             </div>
           </div>
         </div>

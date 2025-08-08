@@ -2,16 +2,17 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <footer className="bg-[#FEFAF6] py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">△</span>
-              </div>
-              <span className="text-xl font-bold text-gray-900">AI SALES</span>
+            <img 
+                src="/assets/logos/main-logo.png" 
+                alt="AI Sales Logo"
+                className="h-8 w-auto" 
+              />
             </div>
             
             <p className="text-gray-600 mb-6 max-w-md">
@@ -23,18 +24,18 @@ const Footer = () => {
             <div>
               <p className="text-gray-900 font-medium mb-2">Follow us:</p>
               <div className="flex space-x-3">
-                <div className="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
-                  <span className="text-blue-600 text-xs font-bold">Be</span>
-                </div>
-                <div className="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
-                  <span className="text-blue-600 text-xs font-bold">in</span>
-                </div>
-                <div className="w-8 h-8 bg-gray-100 rounded flex items-center justify-center">
-                  <span className="text-gray-600 text-xs font-bold">G</span>
-                </div>
-                <div className="w-8 h-8 bg-gray-100 rounded flex items-center justify-center">
-                  <span className="text-gray-600 text-xs font-bold">G</span>
-                </div>
+  <div className="w-8 h-8 bg-[#FAEBDC] rounded flex items-center justify-center">
+  <span className="text-xs font-bold bg-gradient-to-r from-[#FE6037] via-[#77C6B3] to-[#3861F9] bg-clip-text text-transparent">Be</span>
+</div>
+<div className="w-8 h-8 bg-[#FAEBDC] rounded flex items-center justify-center">
+  <span className="text-xs font-bold bg-gradient-to-r from-[#FE6037] via-[#77C6B3] to-[#3861F9] bg-clip-text text-transparent">in</span>
+</div>
+<div className="w-8 h-8 bg-[#FAEBDC] rounded flex items-center justify-center">
+  <span className="text-xs font-bold bg-gradient-to-r from-[#FE6037] via-[#77C6B3] to-[#3861F9] bg-clip-text text-transparent">G</span>
+</div>
+<div className="w-8 h-8 bg-[#FAEBDC] rounded flex items-center justify-center">
+  <span className="text-xs font-bold bg-gradient-to-r from-[#FE6037] via-[#77C6B3] to-[#3861F9] bg-clip-text text-transparent">G</span>
+</div>
               </div>
             </div>
           </div>

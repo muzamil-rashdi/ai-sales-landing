@@ -1,13 +1,13 @@
 import React from 'react';
-import Button from '../ui/button';  
+import Button from '../ui/button';
+
 const CaseStudies = () => {
   return (
-    <section className="bg-white py-20 px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#FEFAF6] py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-16">
           <div>
-
-            <Button text={"CASE STUDY"}/>
+            <Button text={"CASE STUDY"} />
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Client success stories through<br />
               our solutions
@@ -24,24 +24,46 @@ const CaseStudies = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          <div className="bg-gray-50 rounded-2xl overflow-hidden group hover:shadow-xl transition-shadow">
-            <div className="h-64 bg-gray-200 flex items-center justify-center">
-              <span className="text-gray-400">Healthcare Team Meeting</span>
+          {/* Healthcare Case Study */}
+          <div className="bg-[#FEFAF6] rounded-2xl overflow-hidden group hover:shadow-xl transition-shadow">
+            <div className="relative h-64 overflow-hidden">
+              <img 
+                src="/assets/images/healthcare.png" 
+                alt="Healthcare Team Meeting"
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <div 
+                className="absolute inset-0"
+                style={{
+                  background: 'linear-gradient(180deg, rgba(254, 96, 55, 0) 0%, rgba(254, 96, 55, 0.2) 100%)'
+                }}
+              />
             </div>
             <div className="p-8">
-              <Button text={"HEALTHCARE"}/>
+              <Button text={"HEALTHCARE"} />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Making an Impact: Transforming a Healthcare Platform's Rebuild
               </h3>
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-2xl overflow-hidden group hover:shadow-xl transition-shadow">
-            <div className="h-64 bg-gray-200 flex items-center justify-center">
-              <span className="text-gray-400">Startup Team Meeting</span>
+          {/* Startup Case Study */}
+          <div className="bg-[#FEFAF6] rounded-2xl overflow-hidden group hover:shadow-xl transition-shadow">
+            <div className="relative h-64 overflow-hidden">
+              <img 
+                src="/assets/images/startup.png" 
+                alt="Startup Team Meeting"
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300"
+              />
+              <div 
+                className="absolute inset-0"
+                style={{
+                  background: 'linear-gradient(180deg, rgba(254, 96, 55, 0) 0%, rgba(254, 96, 55, 0.2) 100%)'
+                }}
+              />
             </div>
             <div className="p-8">
-               <Button text={"STARTUP"}/>
+              <Button text={"STARTUP"} />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Optimizing Conversions: A Tech Startup's Leap
               </h3>

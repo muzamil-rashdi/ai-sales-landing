@@ -2,8 +2,6 @@ import React from 'react';
 import { CheckCircle } from 'lucide-react';
 import Button from '../ui/button';  
 
-
-
 const Comparison = () => {
   const traditionalItems = [
     "Manually finding leads.",
@@ -40,7 +38,7 @@ const Comparison = () => {
         {/* Mobile layout - stacked with VS image in middle */}
         <div className="flex flex-col lg:hidden">
           {/* Traditional Outreach */}
-          <div className="bg-[#FAEBDC] rounded-t-2xl p-8 relative flex flex-col h-full">
+          <div className="bg-[#FAEBDC] rounded-2xl p-8 relative flex flex-col h-full">
             <div className="flex-grow">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Traditional outreach</h3>
               
@@ -77,7 +75,7 @@ const Comparison = () => {
           </div>
           
           {/* AI-Powered Sales - no gap */}
-          <div className="relative rounded-b-2xl p-[2px] bg-gradient-to-b from-[#FE6037] via-[#77C6B3] to-[#3861FA] flex flex-col h-full">
+          <div className="relative rounded-2xl p-[2px] bg-gradient-to-b from-[#FE6037] via-[#77C6B3] to-[#3861FA] flex flex-col h-full">
             <div className="bg-white rounded-[calc(1rem-2px)] p-8 flex flex-col h-full">
               <div className="flex-grow">
                 <div className="flex items-center space-x-2 mb-6">
@@ -114,9 +112,9 @@ const Comparison = () => {
         </div>
 
         {/* Desktop layout - side by side with VS image in middle */}
-        <div className="hidden lg:flex items-start"> {/* Changed from items-stretch to items-start */}
+        <div className="hidden lg:flex items-start">
           {/* Traditional Outreach */}
-          <div className="bg-[#FAEBDC] rounded-l-2xl p-8 relative flex flex-col h-full flex-1">
+          <div className="bg-[#FAEBDC] rounded-2xl p-8 relative flex flex-col h-full flex-1">
             <div className="flex-grow">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Traditional outreach</h3>
               
@@ -148,12 +146,12 @@ const Comparison = () => {
             <img 
               src="/assets/images/versesdesktop.png" 
               alt="VS" 
-              className="w-[174px] h-[98px] -ml-[1px] -mr-[1px] self-start" /* Added self-start */
+              className="w-[174px] h-[98px] -ml-[1px] -mr-[1px] self-start"
             />
           </div>
           
           {/* AI-Powered Sales - no gap */}
-          <div className="relative rounded-r-2xl p-[2px] bg-gradient-to-b from-[#FE6037] via-[#77C6B3] to-[#3861FA] flex flex-col h-full flex-1">
+          <div className="relative rounded-2xl p-[2px] bg-gradient-to-b from-[#FE6037] via-[#77C6B3] to-[#3861FA] flex flex-col h-full flex-1">
             <div className="bg-white rounded-[calc(1rem-2px)] p-8 flex flex-col h-full">
               <div className="flex-grow">
                 <div className="flex items-center space-x-2 mb-6">

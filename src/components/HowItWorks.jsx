@@ -54,11 +54,11 @@ const HowItWorks = () => {
                 className={`rounded-2xl p-6 ${step.active ? 'bg-orange-500 text-white' : 'bg-orange-50'}`}
               >
                 <div className="flex items-center space-x-4">
-                  <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${
-                    step.active ? 'bg-white text-orange-500' : 'bg-orange-500 text-white'
-                  }`}>
-                    {step.number}
-                  </div>
+ <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold ${
+  step.active ? 'bg-white text-orange-500' : 'bg-orange-500 text-white'
+}`}>
+  {step.number}
+</div>
                   <div>
                     <h3 className={`text-xl font-semibold mb-2 ${step.active ? 'text-white' : 'text-gray-900'}`}>
                       {step.title}
