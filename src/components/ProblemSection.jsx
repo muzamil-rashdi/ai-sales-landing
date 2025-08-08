@@ -3,7 +3,7 @@ import Button from '../ui/button';
 
 const ProblemSection = () => {
 return (
-  <section className="bg-[#FEFAF6] py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+  <section className="bg-[#FEFAF6] py-20 px-4 sm:px-6 lg:px-20 overflow-hidden">
     <div className="max-w-7xl mx-auto">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         {/* Left content column */}

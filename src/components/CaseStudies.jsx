@@ -3,7 +3,7 @@ import Button from '../ui/button';
 
 const CaseStudies = () => {
 return (
-  <section className="bg-[#FEFAF6] py-20 px-4 sm:px-6 lg:px-8">
+  <section className="bg-[#FEFAF6] py-20 px-4 sm:px-6 lg:px-20">
     <div className="max-w-7xl mx-auto">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-16">
         <div>
