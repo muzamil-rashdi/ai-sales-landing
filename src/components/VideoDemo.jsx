@@ -18,11 +18,10 @@ const VideoDemo = () => {
           {/* Image 2 - ARR icon (on top) */}
           <div className="absolute right-4 bottom-4 md:right-8 md:bottom-8"
             style={{
-              width: 'clamp(60px, 15vw, 120px)',
-              height: 'clamp(60px, 15vw, 120px)',
+              width: 'clamp(60px, 15vw, 170px)',
+              height: 'clamp(60px, 15vw, 170px)',
               border: '2px solid transparent',
               borderRadius: '50%',
-              background: 'linear-gradient(180deg, #FE6037 0%, #77C6B3 50.48%, #3861F9 99.52%) border-box',
               backdropFilter: 'blur(12px)',
               padding: '2px',
               zIndex: 10
