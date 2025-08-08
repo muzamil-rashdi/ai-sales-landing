@@ -1,15 +1,13 @@
 import React from 'react';
-
+import Button from '../ui/button';  
 const CaseStudies = () => {
   return (
     <section className="bg-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-16">
           <div>
-            <div className="inline-block bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
-              CASE STUDY
-            </div>
-            
+
+            <Button text={"CASE STUDY"}/>
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Client success stories through<br />
               our solutions
@@ -31,9 +29,7 @@ const CaseStudies = () => {
               <span className="text-gray-400">Healthcare Team Meeting</span>
             </div>
             <div className="p-8">
-              <div className="inline-block bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
-                HEALTHCARE
-              </div>
+              <Button text={"HEALTHCARE"}/>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Making an Impact: Transforming a Healthcare Platform's Rebuild
               </h3>
@@ -45,9 +41,7 @@ const CaseStudies = () => {
               <span className="text-gray-400">Startup Team Meeting</span>
             </div>
             <div className="p-8">
-              <div className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
-                STARTUP
-              </div>
+               <Button text={"STARTUP"}/>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 Optimizing Conversions: A Tech Startup's Leap
               </h3>

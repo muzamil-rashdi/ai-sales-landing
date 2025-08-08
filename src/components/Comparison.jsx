@@ -2,6 +2,8 @@ import React from 'react';
 import { CheckCircle } from 'lucide-react';
 import Button from '../ui/button';  
 
+
+
 const Comparison = () => {
   const traditionalItems = [
     "Manually finding leads.",
