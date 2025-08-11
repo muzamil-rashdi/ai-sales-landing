@@ -42,7 +42,7 @@ return (
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-600 hover:text-gray-900"
@@ -61,14 +61,14 @@ return (
           </Link>
 
           {/* Mobile "Let's talk" button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button className="bg-[#FE6037] hover:bg-orange-600 text-white px-4 py-2 rounded-full font-medium transition-colors text-sm">
               Let's talk
             </button>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             <Link to="/#features" className="text-gray-600 hover:text-gray-900 transition-colors">Features</Link>
             <Link to="/#how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors">How it works</Link>
             <Link to="/#use-cases" className="text-gray-600 hover:text-gray-900 transition-colors">Use cases</Link>
@@ -77,7 +77,7 @@ return (
           </div>
 
           {/* Desktop CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-4">
             <Link to="/signup" className="bg-gray-100 hover:bg-gray-200 text-gray-800 px-6 py-2 rounded-full font-medium transition-colors">
               Sign Up
             </Link>
@@ -91,7 +91,7 @@ return (
 
     {/* Mobile Navigation */}
     {isMenuOpen && (
-      <div className={`md:hidden fixed top-[80px] left-1/2 -translate-x-1/2 w-[calc(100%-16px)] max-w-[99vw] z-40 bg-[#FAEBDC] shadow-lg rounded-b-2xl transition-all duration-500 ease-in-out ${
+      <div className={`lg:hidden fixed top-[80px] left-1/2 -translate-x-1/2 w-[calc(100%-16px)] max-w-[99vw] z-40 bg-[#FAEBDC] shadow-lg rounded-b-2xl transition-all duration-500 ease-in-out ${
         isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}>
         <div className="px-2 pt-2 pb-3 space-y-1">
