@@ -2,8 +2,8 @@ import React from 'react';
 
 const VideoDemo = () => {
 return (
-  <section className="bg-[#FEFAF6] py-8 md:py-16 px-4 sm:px-6 lg:px-8">
-    <div className="max-w-3xl mx-auto relative">
+  <section className="bg-[#FEFAF6] py-8 md:py-16 px-4 sm:px-6 lg:px-20">
+    <div className="max-w-7xl mx-auto relative">
       {/* Container for both images */}
       <div className="relative">
         {/* Image 1 - Main video image (beneath) */}
