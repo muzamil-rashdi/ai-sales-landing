@@ -41,7 +41,7 @@ return (
           </div>
           <div className="p-8">
             <Button text={"HEALTHCARE"} />
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="font-satoshi text-2xl font-bold text-gray-900 mb-4">
               Making an Impact: Transforming a Healthcare Platform's Rebuild
             </h3>
           </div>
@@ -64,7 +64,7 @@ return (
           </div>
           <div className="p-8">
             <Button text={"STARTUP"} />
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="font-satoshi text-[23px] font-bold text-gray-900 mb-4">
               Optimizing Conversions: A Tech Startup's Leap
             </h3>
           </div>
