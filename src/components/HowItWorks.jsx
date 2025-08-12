@@ -25,19 +25,19 @@ const steps = [
 ];
 
 return (
-  <section className="bg-[#FEFAF6] py-20 px-4 sm:px-6 lg:px-20">
+  <section className="bg-[#FEFAF6] py-20 px-4 sm:px-6 lg:px-20 pb-5">
     <div className="max-w-7xl mx-auto">
       <div className="grid lg:grid-cols-2 gap-16 items-start">
         <div>
           <Button text={"HOW IT WORKS"}/>
           
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">
-            A streamline approach for<br />
+          <h2 className="font-satoshi text-[26px] md:text-4xl font-500 text-gray-1000 mb-8">
+            A streamline approach for
             lasting results.<br />
-            Here's how we're working.
+            Here's how we're <br className='block sm:hidden' />working.
           </h2>
           
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-lg text-gray-800 mb-8 text-[14px] leading-[130%] ">
             Cold outreach is time-consuming and hard to scale. Writing emails, 
             remembering follow-ups, and scheduling calls eats up your day.
           </p>
@@ -77,7 +77,7 @@ step.active ? 'bg-white text-orange-500' : 'bg-orange-500 text-white'
       <div className="mt-20 text-center">
         <Button text={"PREVIEW THE PRODUCT"}/>
         
-        <h2 className="text-4xl font-bold text-gray-900 mb-16">
+        <h2 className="font-satoshi text-[28px] md:text-4xl font-[500] text-gray-1000 mb-0">
           A modern interface built for<br />
           outreach management
         </h2>

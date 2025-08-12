@@ -2,7 +2,7 @@ import React from 'react';
 
 const CTA = () => {
 return (
-  <section className="bg-orange-500  px-0 sm:px-0 lg:px-0 lg:mx-20 rounded-xl overflow-hidden ">
+  <section className="bg-orange-500  px-0 sm:px-0 lg:px-0 lg:mx-20 sm:mx-1 md:mx-1 xs:mx-2 rounded-xl overflow-hidden ">
     <div className="max-w-6xl mx-auto text-center">
       <div className="inline-block bg-white text-orange-400 px-4 py-2 rounded-md text-sm font-medium mb-8">
         READY TO ELEVATE

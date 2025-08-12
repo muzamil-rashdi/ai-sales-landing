@@ -9,17 +9,18 @@ return (
         {/* Left content column */}
         <div>
           <Button text={"FACING CHALLENGES"}/>
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">
+          <h2 className="font-satoshi text-2xl md:text-3xl font-[500] text-gray-900 mb-8">
             Manual outreach work is<br />
             slowing you down.<br />
             Here's how we're fixing it.
           </h2>
-          <p className="text-lg text-gray-600 mb-8">
-            Cold outreach is time-consuming and hard to scale. Writing emails, remembering 
-            follow-ups, and scheduling calls eats up your day — especially when you're 
-            doing it all yourself. For busy founders and small teams, it quickly becomes a 
-            drain on time, energy, and growth.
-          </p>
+<p className="font-satoshi text-base text-gray-600 mb-8 text-justify md:text-left">
+  Cold outreach is time-consuming and hard to scale. Writing emails, remembering 
+  follow-ups, and scheduling calls eats up your day — especially when you're 
+  doing it all yourself. For busy founders and small teams, it quickly becomes a 
+  drain on time, energy, and growth.
+</p>
+
           <div className="space-y-4 mb-8">
             {[
               "Comment and tag teammates directly within contracts",
@@ -27,8 +28,8 @@ return (
               "Keep all communication contextually linked to clauses"
             ].map((item, index) => (
               <div key={index} className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                <span className="text-gray-700">{item}</span>
+                <div className="w-4 h-0.5 bg-orange-500 "></div>
+                <span className="text-black ">{item}</span>
               </div>
             ))}
           </div>

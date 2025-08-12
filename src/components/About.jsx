@@ -19,9 +19,9 @@ const About = () => {
 
         <Button text={"WHO WE ARE"}/>
         
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 md:mb-16">
-          Transforming businesses<br />
-          with expertise
+        <h2 className="font-satoshi text-[28px] md:text-4xl font-[500] text-gray-1000 mb-8 md:mb-16">
+          Transforming businesses 
+          <br className='hidden sm:block' /> with expertise
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-16">
@@ -43,7 +43,7 @@ const About = () => {
 
          <div className="bg-[#FAEBDC] rounded-2xl p-[3vw] md:p-8">
           <Button text={"INDUSTRIES WE SERVE"} />
-          <h3 className="text-[5.5vw] md:text-3xl font-bold text-gray-900 mb-[3vw] md:mb-12">
+          <h3 className="font-satoshi text-[5vw] md:text-3xl font-500 text-gray-900 mb-[3vw] md:mb-12">
             Industry-specific expertise to<br />
             drive your success
           </h3>
@@ -66,7 +66,7 @@ const About = () => {
               {industries.slice(2).map((industry, index) => (
                 <span
                   key={index}
-                  className={`${industry.color} text-white px-[1.3vw] py-[1vw] lg:px-6 md:py-3 rounded-full text-[2vw] lg:text-base font-medium hover:scale-105 transition-transform cursor-pointer whitespace-nowrap ${
+                  className={`${industry.color} text-white px-[1.3vw] py-[1vw] lg:px-6 md:py-3 rounded-full text-[1.8vw] lg:text-base font-medium hover:scale-105 transition-transform cursor-pointer whitespace-nowrap ${
                     index === industries.slice(2).length - 1
                       ? "rotate-[22deg] relative -top-[3vw] -left-[2.5vw] lg:-top-5 md:-left-7"
                       : ""

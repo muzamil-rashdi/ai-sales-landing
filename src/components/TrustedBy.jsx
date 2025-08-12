@@ -37,28 +37,34 @@ const clients = [
 ];
 
 return (
-  <section className="bg-orange-500 py-16 px-4 sm:px-6 lg:px-8">
-    <div className="max-w-7xl mx-auto text-center">
-    <div 
-className="inline-block font-[500px] px-3 py-1 mb-4 rounded-md"
-style={{ 
-  backgroundColor: 'white' ,
-  color: '#FE6037'
-  
-}}
->
-OUR CLIENTS
+  <section className="bg-orange-500 py-16  sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto text-center">
+      <div 
+       className="inline-block font-[500px] px-3 py-1 mb-4 rounded-md"
+       style={{ 
+       backgroundColor: 'white' ,
+       color: '#FE6037'
+        }}
+        >
+        OUR CLIENTS
+        </div>
+       
+<div className="flex justify-center">
+  <h2
+    className="font-satoshi font-medium text-[30px] leading-[110%] tracking-[0px] text-center align-middle w-[320px] md:w-[400px] h-[99px] text-white mb-12 opacity-100"
+  >
+    Trusted by high-growth <br />
+    startups across industries
+  </h2>
 </div>
-      <h2 className="text-3xl font-bold text-white mb-12">
-        Trusted by high-growth<br />
-        startups across industries
-      </h2>
+
+
       
       {/* Desktop View - Visible on medium screens and up */}
-      <div className="hidden md:flex flex-wrap justify-around items-center gap-8 opacity-80">
+      <div className="hidden md:flex flex-wrap justify-around items-center gap-8 opacity-70">
         {clients.map((client) => (
          
-          <div key={client.id} className="flex items-center space-x-2 text-white opacity-70">
+          <div key={client.id} className="flex items-center space-x-2 text-white opacity-60">
             {client.icon}
             <span className="text-lg font-medium">{client.name}</span>
           </div>
@@ -85,7 +91,7 @@ OUR CLIENTS
           >
             {clients.map((client) => (
               <SwiperSlide key={client.id}>
-                <div className="flex items-center justify-center space-x-2 text-white py-4 h-full">
+                <div className="flex  justify-center space-x-2 text-white py-4 h-full opacity-60">
                   {client.icon}
                   <span className="text-lg font-medium">{client.name}</span>
                 </div>

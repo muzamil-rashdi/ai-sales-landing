@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        satoshi: ['Satoshi Variable', 'sans-serif'],
+      },
+    },
+  
   },
   plugins: [require('tailwind-scrollbar-hide')],
 }

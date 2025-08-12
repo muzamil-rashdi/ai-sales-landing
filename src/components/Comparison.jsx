@@ -24,23 +24,24 @@ const aiItems = [
 ];
 
 return (
-  <section className="bg-[#FEFAF6] py-20 px-4 sm:px-6 lg:px-20">
+  <section className="bg-[#FEFAF6] py-20 px-0 sm:px-6 lg:px-20">
     <div className="max-w-7xl mx-auto">
       <div className="text-center mb-16">
         <Button text={"OUR CLIENT'S"}/>
         
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">
-          Traditional outreach vs AI-powered sales<br />
-          What's the real difference?
-        </h2>
+<h2 className="w-[320px] sd:w-auto text-3xl md:text-4xl font-medium text-gray-900 leading-tight mb-4">
+  Traditional outreach vs AI-powered sales<br />
+  What's the real difference?
+</h2>
+
       </div>
 
       {/* Mobile layout - stacked with VS image in middle */}
-      <div className="flex flex-col lg:hidden">
+      <div className="flex flex-col lg:hidden m-4 md:m-0">
         {/* Traditional Outreach */}
         <div className="bg-[#FAEBDC] rounded-2xl p-8 relative flex flex-col h-full">
           <div className="flex-grow">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Traditional outreach</h3>
+            <h3 className="font-satoshi text-3xl font-600 text-gray-900 mb-6">Traditional outreach</h3>
             
             <p className="text-gray-600 mb-8">
               From endless back-and-forth to missed deadlines and hidden risks, traditional contract management is outdated. Our AI automates the heavy lifting—so your team can stay compliant, and focus on what matters.
@@ -116,7 +117,7 @@ return (
         {/* Traditional Outreach */}
         <div className="bg-[#FAEBDC] rounded-2xl p-8 relative flex flex-col h-full flex-1">
           <div className="flex-grow">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Traditional outreach</h3>
+            <h3 className="font-satoshi text-3xl font-bold text-gray-900 mb-6">Traditional outreach</h3>
             
             <p className="text-gray-600 mb-8">
               From endless back-and-forth to missed deadlines and hidden risks, traditional contract management is outdated. Our AI automates the heavy lifting—so your team can stay compliant, and focus on what matters.

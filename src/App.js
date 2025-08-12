@@ -16,12 +16,13 @@ import Login from './components/auth/Login';
 import SignUp from './components/auth/SignUp';
 import ResetPassword from './components/auth/ResetPassword';
 
+
 function AppWrapper() {
 const location = useLocation();
 const isAuthPage = ['/login', '/signup', '/reset-password'].includes(location.pathname);
 
 return (
-  <div className="min-h-screen ">
+  <div id="1" className="min-h-screen ">
     {!isAuthPage && <Header />}
     <Routes>
       <Route path="/" element={
