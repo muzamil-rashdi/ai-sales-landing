@@ -1,5 +1,4 @@
 import React from 'react';
-
 const CTA = () => {
 return (
   <section className="bg-orange-500  px-0 sm:px-0 lg:px-0 mx-1 lg:mx-20 sm:mx-1 md:mx-1 xs:mx-2 rounded-xl overflow-hidden ">

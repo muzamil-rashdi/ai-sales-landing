@@ -34,7 +34,7 @@ return (
         <Button text={"BUSINESS & SOLUTION"}/>
 
         <h1 className="text-3xl md:text-5xl font-500 text-gray-900 mb-8 leading-tight">
-          Let AI handle outreach, So <br className='hidden sm:block' />
+          Let AI handle outreach, So <br className='hidden md:block' />
           you can focus on
           closing
         </h1>
@@ -55,45 +55,49 @@ return (
         </div>
       </div>
 
-      {/* Images Section */}
-      <div className="w-full mt-16 overflow-hidden">
-<div
-  className="
-    flex flex-nowrap 
-    justify-start md:justify-between 
-    gap-6 
-    overflow-x-auto md:overflow-visible 
-    px-0 md:px-4 
-    scrollbar-hide
-    min-w-full
-    scroll-snap-x scroll-snap-mandatory
-  "
->
+    {/* Images Section */}
+<div className="w-full mt-16 relative overflow-hidden">
+  {/* Left gradient */}
+  <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-[#FEFAF6] to-transparent pointer-events-none z-10" />
 
+  {/* Right gradient */}
+  <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-[#FEFAF6] to-transparent pointer-events-none z-10" />
 
-          {peopleImages.map((img, index) => (
-            <div
-              key={index}
-              className="flex-shrink-0 relative transition duration-300 group"
-              style={{
-                width: '250px',
-                height: '250px',
-                borderRadius: img.borderRadius,
-                background: img.background,
-                overflow: 'hidden',
-              }}
-            >
-              {/* Grayscale image with hover to color */}
-              <img
-                src={img.src}
-                alt={`Person ${index + 1}`}
-                className="w-full h-full object-cover opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition duration-300"
-                style={{ borderRadius: img.borderRadius }}
-              />
-            </div>
-          ))}
-        </div>
+  <div
+    className="
+      flex flex-nowrap 
+      justify-start md:justify-between 
+      gap-6 
+      overflow-x-auto md:overflow-visible 
+      px-0 md:px-4 
+      scrollbar-hide
+      min-w-full
+      scroll-snap-x scroll-snap-mandatory
+    "
+  >
+    {peopleImages.map((img, index) => (
+      <div
+        key={index}
+        className="flex-shrink-0 relative transition duration-300 group"
+        style={{
+          width: '250px',
+          height: '250px',
+          borderRadius: img.borderRadius,
+          background: img.background,
+          overflow: 'hidden',
+        }}
+      >
+        <img
+          src={img.src}
+          alt={`Person ${index + 1}`}
+          className="w-full h-full object-cover opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition duration-300"
+          style={{ borderRadius: img.borderRadius }}
+        />
       </div>
+    ))}
+  </div>
+</div>
+
     </div>
   </section>
 );
