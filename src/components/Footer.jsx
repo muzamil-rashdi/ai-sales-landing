@@ -15,7 +15,7 @@ return (
             />
           </div>
           
-          <p className="text-[14px] text-gray-600 mb-6 max-w-md">
+          <p className="font-satoshi text-[14px] text-gray-600 mb-6 max-w-md">
             Lorem ipsum dolor sit amet consectetur.<br className='block md:hidden '/> Adipiscing <br className='hidden md:block'/> 
             egestas volutpat tincidunt semper<br className='block md:hidden'/> et adipiscing <br className='hidden md:block'/>
             sagittis eget nunc. Ac tortor<br className='block md:hidden'/> sagittis condimentum <br className='hidden md:block'/>
@@ -24,7 +24,7 @@ return (
           <hr className="border-t border-gray-300 my-4 sm:mr-[42.6%]" />
           <div>
             <p className="text-gray-900 font-medium mb-2">Follow us:</p>
-            <div className="flex space-x-3">
+            <div className="font-satoshi flex space-x-3">
 <div className="rounded-full w-10 h-10 bg-[#FAEBDC] rounded flex items-center justify-center">
 <span className="text-[20px] font-bold bg-gradient-to-r from-[#FE6037] via-[#77C6B3] to-[#3861F9] bg-clip-text text-transparent">Be</span>
 </div>
@@ -55,7 +55,7 @@ return (
 
         {/* Legal Links */}
         <div>
-          <h3 className="font-semibold text-gray-900 mb-4">Legal</h3>
+          <h3 className="font-satoshi font-semibold text-gray-900 mb-4">Legal</h3>
           <div className="space-y-3">
             <a href="#" className="block text-gray-600 hover:text-gray-900 transition-colors">Privacy</a>
             <a href="#" className="block text-gray-600 hover:text-gray-900 transition-colors">Terms</a>
@@ -67,7 +67,7 @@ return (
 
       {/* Bottom Footer */}
       
-      <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-start">
+      <div className="font-satoshi border-t border-gray-200 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-start">
         <p className="text-gray-500 text-sm">Dark View © 2025. All rights reserved.</p>
         
         <div className="flex space-x-6 mt-4 sm:mt-0 ">

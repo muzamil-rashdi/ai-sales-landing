@@ -3,7 +3,7 @@ const CTA = () => {
 return (
   <section className="bg-orange-500  px-0 sm:px-0 lg:px-0 mx-1 lg:mx-20 sm:mx-1 md:mx-1 xs:mx-2 rounded-xl overflow-hidden ">
     <div className="max-w-6xl mx-auto text-center">
-      <div className="inline-block bg-white text-orange-400 px-4 py-2 rounded-md text-sm font-medium mb-6 mt-8">
+      <div className="font-satoshi inline-block bg-white text-orange-400 px-4 py-2 rounded-md text-sm font-medium mb-6 mt-8">
         READY TO ELEVATE
       </div>
       
@@ -12,7 +12,7 @@ return (
         next achievement
       </h2>
       
-      <div className="flex flex-row sm:flex-row gap-1 justify-center items-center mb-12">
+      <div className="font-satoshi flex flex-row sm:flex-row gap-1 justify-center items-center mb-12">
         <button className="bg-white text-orange-500 hover:bg-gray-100 px-5 py-3 md:px-8 md:py-4 rounded-full font-medium transition-colors">
           Let's talk
         </button>
@@ -21,7 +21,7 @@ return (
         </button>
       </div>
 
-      <div className="flex relative">
+      <div className="font-satoshi flex relative">
         {/* Updated image container with clipping */}
         <div className="relative w-full overflow-hidden rounded-xl ">
           <div className="relative" style={{ width: '133.33%', marginLeft: '-33.33%' }}>

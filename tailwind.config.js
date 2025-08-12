@@ -6,10 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        satoshi: ['Satoshi Variable', 'sans-serif'],
+        satoshi: ['"Satoshi Variable"', 'sans-serif'],
       },
     },
-  
   },
   plugins: [require('tailwind-scrollbar-hide')],
 }

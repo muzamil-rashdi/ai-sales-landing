@@ -33,8 +33,8 @@ return (
     title="Create your account"
     footer={
       <>
-        <span className="text-gray-600">Already have an account? </span>
-        <Link to="/login" className="font-medium text-black-600 hover:text-orange-500 underline">
+        <span className="font-satoshi text-gray-600">Already have an account? </span>
+        <Link to="/login" className="font-satoshi font-medium text-black-600 hover:text-orange-500 underline">
           Sign In
         </Link>
       </>

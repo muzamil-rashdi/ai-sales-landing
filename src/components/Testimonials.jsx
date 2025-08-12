@@ -132,13 +132,13 @@ const Testimonials = () => {
 
         <div className="relative">
           {/* Top overlay */}
-          <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-[#FEFAF6] to-transparent z-10 pointer-events-none" />
+          <div className="font-satoshi absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-[#FEFAF6] to-transparent z-10 pointer-events-none" />
 
           {/* MOBILE SWIPER - visible below md
               vertical, shows 3 cards, moves 1 per swipe.
               larger container height and bigger gaps to avoid overlap.
           */}
-          <div className="block xl:hidden">
+          <div className="font-satoshi block xl:hidden">
             <Swiper
               modules={[Navigation]}
               navigation
@@ -157,7 +157,7 @@ const Testimonials = () => {
           </div>
 
           {/* DESKTOP SWIPER - visible md and up (unchanged) */}
-          <div className="hidden xl:block">
+          <div className="font-satoshi hidden xl:block">
             <Swiper
               modules={[Navigation]}
               navigation
@@ -182,7 +182,7 @@ const Testimonials = () => {
           </div>
 
           {/* Bottom overlay */}
-          <div className="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-[#FEFAF6] to-transparent z-10 pointer-events-none" />
+          <div className="font-satoshi absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-[#FEFAF6] to-transparent z-10 pointer-events-none" />
         </div>
       </div>
     </section>

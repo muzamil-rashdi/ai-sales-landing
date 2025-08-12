@@ -3,13 +3,13 @@ import Button from '../ui/button';
 
 const ProblemSection = () => {
 return (
-  <section className="bg-[#FEFAF6] py-20 px-4 sm:px-6 lg:px-20 overflow-hidden">
+  <section className="font-satoshi bg-[#FEFAF6] py-20 px-4 sm:px-6 lg:px-20 overflow-hidden">
     <div className="max-w-7xl mx-auto">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         {/* Left content column */}
         <div>
           <Button text={"FACING CHALLENGES"}/>
-          <h2 className="font-satoshi text-2xl md:text-3xl font-[500] text-gray-900 mb-8">
+          <h2 className=" font-satoshi text-2xl md:text-3xl font-[500] text-gray-900 mb-8">
             Manual outreach work is<br />
             slowing you down.<br />
             Here's how we're fixing it.
@@ -21,7 +21,7 @@ return (
   drain on time, energy, and growth.
 </p>
 
-          <div className="space-y-4 mb-8">
+          <div className="font-satoshi space-y-4 mb-8">
             {[
               "Comment and tag teammates directly within contracts",
               "Assign tasks and review notes in real-time",
@@ -33,7 +33,7 @@ return (
               </div>
             ))}
           </div>
-          <button className="border border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-3 rounded-full font-medium transition-colors">
+          <button className="font-satoshi border border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-3 rounded-full font-medium transition-colors">
             Learn more
           </button>
         </div>

@@ -1,3 +1,7 @@
+@import './fonts.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
 
@@ -7,25 +11,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@font-face {
-  font-family: 'Satoshi Variable';
-  src: 
-    url('/fonts/Satoshi-Variable.woff2') format('woff2'),
-    url('/fonts/Satoshi-Variable.woff') format('woff'),
-    url('/fonts/Satoshi-Variable.ttf') format('truetype');
-  font-weight: 300 900; /* Variable font weight range */
-  font-style: normal;
-  font-display: swap; /* Optional: avoids FOIT (Flash of Invisible Text) */
-}
-/* Optional: Define a CSS variable for reusability */
-:root {
-  --font-satoshi: 'Satoshi Variable', sans-serif;
-}
 
-/* Apply to the entire project */
-body {
- 
-}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

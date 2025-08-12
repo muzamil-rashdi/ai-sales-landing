@@ -22,11 +22,11 @@ const location = useLocation();
 const isAuthPage = ['/login', '/signup', '/reset-password'].includes(location.pathname);
 
 return (
-  <div id="1" className="min-h-screen ">
+  <div id="1" className="min-h-screen font-satoshi">
     {!isAuthPage && <Header />}
     <Routes>
       <Route path="/" element={
-        <main className="pt-16 bg-[#FEFAF6]">
+        <main className="pt-16 bg-[#FEFAF6] font-satoshi">
           <Hero />
           <TrustedBy />
           <ProblemSection />
@@ -37,6 +37,7 @@ return (
           <Testimonials />
           <CaseStudies />
           <CTA />
+          
         </main>
       }/>
       <Route path="/login" element={<Login />} />

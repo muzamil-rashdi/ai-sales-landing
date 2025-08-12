@@ -28,8 +28,8 @@ return (
     title="Sign in to your account"
     footer={
       <>
-        <span className="text-gray-600">Don't have an account? </span>
-        <Link to="/signup" className="font-medium text-black-600 hover:text-orange-500 underline">
+        <span className="font-satoshi text-gray-600">Don't have an account? </span>
+        <Link to="/signup" className="font-satoshi font-medium text-black-600 hover:text-orange-500 underline">
           Sign Up
         </Link>
       </>

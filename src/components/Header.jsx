@@ -68,7 +68,7 @@ return (
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className=" font-satoshi hidden lg:flex items-center space-x-8">
             <Link to="/#features" className="text-gray-600 hover:text-gray-900 transition-colors">Features</Link>
             <Link to="/#how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors">How it works</Link>
             <Link to="/#use-cases" className="text-gray-600 hover:text-gray-900 transition-colors">Use cases</Link>
@@ -77,11 +77,11 @@ return (
           </div>
 
           {/* Desktop CTA Buttons */}
-          <div className="hidden lg:flex items-center space-x-4">
+          <div className="font-satoshi hidden lg:flex items-center space-x-4">
             <Link to="/signup" className="bg-gray-100 hover:bg-gray-200 text-gray-800 px-6 py-2 rounded-full font-medium transition-colors">
               Sign Up
             </Link>
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium transition-colors">
+            <button className="font-satoshi bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium transition-colors">
               Let's talk
             </button>
           </div>
@@ -91,10 +91,10 @@ return (
 
     {/* Mobile Navigation */}
     {isMenuOpen && (
-      <div className={`lg:hidden fixed top-[80px] left-1/2 -translate-x-1/2 w-[calc(100%-16px)] max-w-[99vw] z-40 bg-[#FAEBDC] shadow-lg rounded-b-2xl transition-all duration-500 ease-in-out ${
+      <div className={`font-satoshi lg:hidden fixed top-[80px] left-1/2 -translate-x-1/2 w-[calc(100%-16px)] max-w-[99vw] z-40 bg-[#FAEBDC] shadow-lg rounded-b-2xl transition-all duration-500 ease-in-out ${
         isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}>
-        <div className="px-2 pt-2 pb-3 space-y-1">
+        <div className="font-satoshi px-2 pt-2 pb-3 space-y-1">
           <Link to="/#features" className="block px-3 py-2 text-gray-600" onClick={() => setIsMenuOpen(false)}>Features</Link>
           <Link to="/#how-it-works" className="block px-3 py-2 text-gray-600" onClick={() => setIsMenuOpen(false)}>How it works</Link>
           <Link to="/#use-cases" className="block px-3 py-2 text-gray-600" onClick={() => setIsMenuOpen(false)}>Use cases</Link>

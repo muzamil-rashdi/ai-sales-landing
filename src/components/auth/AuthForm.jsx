@@ -8,7 +8,7 @@ showRememberMe = false,
 showForgotPassword = false 
 }) => {
 return (
-  <form className="space-y-6">
+  <form className="font-satoshi space-y-6">
     {fields.map((field, index) => (
       <div key={index}>
         <label htmlFor={field.id} className="block text-sm font-medium text-gray-700">
@@ -26,7 +26,7 @@ return (
     ))}
 
     {(showRememberMe || showForgotPassword) && (
-      <div className="flex items-center justify-between">
+      <div className="font-satoshi flex items-center justify-between">
         {showRememberMe && (
           <label className="flex items-center text-sm text-gray-900">
             <input type="checkbox" className="h-4 w-4 text-orange-600 border-gray-300 rounded" />
@@ -43,7 +43,7 @@ return (
 
     <button
       type="submit"
-      className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#FE6037] hover:bg-orange-600"
+      className="font-satoshi w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#FE6037] hover:bg-orange-600"
     >
       {submitText}
     </button>

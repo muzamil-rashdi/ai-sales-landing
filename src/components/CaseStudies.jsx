@@ -13,12 +13,12 @@ return (
             our solutions
           </h2>
           
-          <p className="text-sm text-gray-600">
+          <p className="font-satoshi text-sm text-gray-600">
             Cold outreach is time-consuming and hard to scale. Writing emails, remembering follow-ups, and scheduling calls eats up your day.
           </p>
         </div>
         
-        <button className="border border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-3 rounded-full font-medium transition-colors mt-8 sm:mt-0">
+        <button className="font-satoshi border border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-3 rounded-full font-medium transition-colors mt-8 sm:mt-0">
           Explore all
         </button>
       </div>

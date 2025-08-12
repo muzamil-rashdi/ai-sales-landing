@@ -29,7 +29,7 @@ return (
       <div className="text-center mb-16">
         <Button text={"OUR CLIENT'S"}/>
         
-<h2 className=" sd:w-auto text-3xl md:text-4xl font-500 text-gray-900 leading-tight mb-4">
+<h2 className="font-satoshi sd:w-auto text-3xl md:text-4xl font-500 text-gray-900 leading-tight mb-4">
   Traditional outreach vs AI-powered sales<br />
   What's the real difference?
 </h2>
@@ -37,17 +37,17 @@ return (
       </div>
 
       {/* Mobile layout - stacked with VS image in middle */}
-      <div className="flex flex-col lg:hidden m-4 md:m-0">
+      <div className="font-satoshi flex flex-col lg:hidden m-4 md:m-0">
         {/* Traditional Outreach */}
         <div className="bg-[#FAEBDC] rounded-2xl p-8 relative flex flex-col h-full">
           <div className="flex-grow">
             <h3 className="font-satoshi text-3xl font-600 text-gray-900 mb-6">Traditional outreach</h3>
             
-            <p className="text-gray-600 mb-8">
+            <p className="font-satoshi text-gray-600 mb-8">
               From endless back-and-forth to missed deadlines and hidden risks, traditional contract management is outdated. Our AI automates the heavy lifting—so your team can stay compliant, and focus on what matters.
             </p>
 
-            <div className="space-y-4 mb-8">
+            <div className="font-satoshi space-y-4 mb-8">
               {traditionalItems.map((item, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-red-500" />
@@ -87,7 +87,7 @@ return (
                 />
               </div>
               
-              <p className="text-gray-600 mb-8">
+              <p className="font-satoshi text-gray-600 mb-8">
                 From endless back-and-forth to missed deadlines and hidden risks, traditional contract management is outdated. Our AI automates the heavy lifting—so your team can stay compliant, and focus on what matters.
               </p>
 
@@ -119,11 +119,11 @@ return (
           <div className="flex-grow">
             <h3 className="font-satoshi text-3xl font-bold text-gray-900 mb-6">Traditional outreach</h3>
             
-            <p className="text-gray-600 mb-8">
+            <p className="font-satoshi text-gray-600 mb-8">
               From endless back-and-forth to missed deadlines and hidden risks, traditional contract management is outdated. Our AI automates the heavy lifting—so your team can stay compliant, and focus on what matters.
             </p>
 
-            <div className="space-y-4 mb-8">
+            <div className="font-satoshi space-y-4 mb-8">
               {traditionalItems.map((item, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-red-500" />
@@ -163,11 +163,11 @@ return (
                 />
               </div>
               
-              <p className="text-gray-600 mb-8">
+              <p className="font-satoshi text-gray-600 mb-8">
                 From endless back-and-forth to missed deadlines and hidden risks, traditional contract management is outdated. Our AI automates the heavy lifting—so your team can stay compliant, and focus on what matters.
               </p>
 
-              <div className="space-y-4 mb-8">
+              <div className="font-satoshi space-y-4 mb-8">
                 {aiItems.map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500" />
@@ -177,7 +177,7 @@ return (
               </div>
             </div>
 
-            <div className="mt-auto pt-4 -mx-8 -mb-8">
+            <div className="font-satoshi mt-auto pt-4 -mx-8 -mb-8">
               <img 
                 src="/assets/images/happyrobot.png" 
                 alt="Happy AI Robot" 

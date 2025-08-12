@@ -37,10 +37,10 @@ const clients = [
 ];
 
 return (
-  <section className="bg-orange-500 py-16  sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto text-center">
+  <section className="font-satoshi bg-orange-500 py-16  sm:px-6 lg:px-8">
+      <div className="font-satoshi max-w-7xl mx-auto text-center">
       <div 
-       className="inline-block font-[500px] px-3 py-1 mb-4 rounded-md"
+       className="font-satoshi inline-block font-[500px] px-3 py-1 mb-4 rounded-md"
        style={{ 
        backgroundColor: 'white' ,
        color: '#FE6037'
@@ -61,7 +61,7 @@ return (
 
       
       {/* Desktop View - Visible on medium screens and up */}
-      <div className="hidden md:flex flex-wrap justify-around items-center gap-8 opacity-70">
+      <div className="font-satoshi hidden md:flex flex-wrap justify-around items-center gap-8 opacity-70">
         {clients.map((client) => (
          
           <div key={client.id} className="flex items-center space-x-2 text-white opacity-60">

@@ -24,31 +24,31 @@ const About = () => {
           <br className='hidden sm:block' /> with expertise
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-16">
+        <div className="font-satoshi grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-16">
           <div className="bg-orange-500 text-white rounded-2xl p-8 md:p-16">
             <div className="text-4xl md:text-4xl font-bold mb-2 md:mb-4">3+ Years</div>   
             <div className="text-3xs md:text-sm text-orange-200 mt-1 md:mt-2">Proven Experience</div>
           </div>
           
-          <div className="bg-orange-500 text-white rounded-2xl p-8 md:p-16">
+          <div className=" font-satoshi bg-orange-500 text-white rounded-2xl p-8 md:p-16">
             <div className="text-4xl md:text-4xl font-bold mb-2 md:mb-4">11+ Clients</div>
             <div className="text-3xs md:text-sm text-orange-200 mt-1 md:mt-2">Trusted Partnerships</div>
           </div>
           
-          <div className="bg-orange-500 text-white rounded-2xl p-8 md:p-16">
+          <div className="font-satoshi bg-orange-500 text-white rounded-2xl p-8 md:p-16">
             <div className="text-4xl md:text-4xl font-bold mb-2 md:mb-4">41+ Projects</div>
             <div className="text-3xs md:text-sm text-orange-200 mt-1 md:mt-2">Impactful Results</div>
           </div>
         </div>
 
-         <div className="bg-[#FAEBDC] rounded-2xl p-[3vw] md:p-8">
+         <div className="font-satoshi bg-[#FAEBDC] rounded-2xl p-[3vw] md:p-8">
           <Button text={"INDUSTRIES WE SERVE"} />
           <h3 className="font-satoshi text-[5vw] md:text-3xl font-500 text-gray-900 mb-[3vw] md:mb-12">
             Industry-specific expertise to<br />
             drive your success
           </h3>
 
-          <div className="space-y-[0vw]  ">
+          <div className="font-satoshi space-y-[0vw]  ">
             {/* Row 1 */}
             <div className="flex justify-center gap-[1vw] md:gap-4 ">
               {industries.slice(0, 2).map((industry, index) => (
@@ -62,7 +62,7 @@ const About = () => {
             </div>
 
             {/* Row 2 */}
-            <div className="flex justify-center ">
+            <div className="font-satoshi flex justify-center ">
               {industries.slice(2).map((industry, index) => (
                 <span
                   key={index}

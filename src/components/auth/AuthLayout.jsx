@@ -2,7 +2,7 @@ import React from 'react';
 
 const AuthLayout = ({ title, subtitle, children, footer, showGoogle = true }) => {
   return (
-    <div className="min-h-screen relative flex flex-col justify-center py-8 px-4 sm:px-6 lg:px-8">
+    <div className="font-satoshi min-h-screen relative flex flex-col justify-center py-8 px-4 sm:px-6 lg:px-8">
       {/* Background layers */}
       <div className="absolute inset-0 overflow-hidden -z-10 pointer-events-none bg-[#FEFAF6]">
         {/* Base gradient background */}
@@ -28,7 +28,7 @@ const AuthLayout = ({ title, subtitle, children, footer, showGoogle = true }) =>
       </div>
 
       {/* Content Card */}
-      <div className="w-full max-w-md mx-auto shadow-[0px_4.06px_101.52px_0px_#FE603740] relative z-10">
+      <div className="font-satoshi w-full max-w-md mx-auto shadow-[0px_4.06px_101.52px_0px_#FE603740] relative z-10">
         <div className="bg-white py-8 px-6 shadow rounded-2xl sm:px-10">
           {/* Logo */}
           <img 

@@ -37,30 +37,30 @@ return (
             Here's how we're <br className='block sm:hidden' />working.
           </h2>
           
-          <p className="text-lg text-gray-800 mb-8 text-[14px] leading-[130%] ">
+          <p className="font-satoshi text-lg text-gray-800 mb-8 text-[14px] leading-[130%] ">
             Cold outreach is time-consuming and hard to scale. Writing emails, 
             remembering follow-ups, and scheduling calls eats up your day.
           </p>
 
-          <button className="border border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-3 rounded-full font-medium transition-colors">
+          <button className="font-satoshi border border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-3 rounded-full font-medium transition-colors">
             Learn more
           </button>
         </div>
 
-        <div className="space-y-6">
+        <div className="font-satoshi space-y-6">
           {steps.map((step, index) => (
             <div 
               key={index}
-              className={`rounded-2xl p-6 ${step.active ? 'bg-orange-500 text-white' : 'bg-orange-50'}`}
+              className={`font-satoshi rounded-2xl p-6 ${step.active ? 'bg-orange-500 text-white' : 'bg-orange-50'}`}
             >
-              <div className="flex items-center space-x-4">
+              <div className="font-satoshi flex items-center space-x-4">
 <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold ${
 step.active ? 'bg-white text-orange-500' : 'bg-orange-500 text-white'
 }`}>
 {step.number}
 </div>
                 <div>
-                  <h3 className={`text-xl font-semibold mb-2 ${step.active ? 'text-white' : 'text-gray-900'}`}>
+                  <h3 className={`font-satoshi text-xl font-semibold mb-2 ${step.active ? 'text-white' : 'text-gray-900'}`}>
                     {step.title}
                   </h3>
                   <p className={step.active ? 'text-orange-100' : 'text-gray-600'}>
