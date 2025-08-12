@@ -123,7 +123,7 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <Button text={"TESTIMONIALS"} />
-          <h2 className="text-4xl font-bold text-gray-900">
+          <h2 className="font-satoshi text-[28px] md:text-4xl leading-[120%] sm:leading-[130%] font-500 text-gray-900">
             What our users say about
             <br />
             their experience

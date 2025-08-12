@@ -29,7 +29,7 @@ return (
       <div className="text-center mb-16">
         <Button text={"OUR CLIENT'S"}/>
         
-<h2 className="w-[320px] sd:w-auto text-3xl md:text-4xl font-medium text-gray-900 leading-tight mb-4">
+<h2 className="w-[320px] sd:w-auto text-3xl md:text-4xl font-500 text-gray-900 leading-tight mb-4">
   Traditional outreach vs AI-powered sales<br />
   What's the real difference?
 </h2>

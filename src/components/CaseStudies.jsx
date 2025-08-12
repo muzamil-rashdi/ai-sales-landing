@@ -8,12 +8,12 @@ return (
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-16">
         <div>
           <Button text={"CASE STUDY"} />
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="font-satoshi text-[26px] sm:text-4xl font-[500] text-gray-900 mb-4">
             Client success stories through<br />
             our solutions
           </h2>
           
-          <p className="text-lg text-gray-600">
+          <p className="text-sm text-gray-600">
             Cold outreach is time-consuming and hard to scale. Writing emails, remembering follow-ups, and scheduling calls eats up your day.
           </p>
         </div>
