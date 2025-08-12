@@ -39,17 +39,17 @@ return (
           closing
         </h1>
 
-        <p className="text-sm font-normal text-base text-gray-600 mb-12 max-w-3xl mx-auto leading-[130%] tracking-[0px] text-center">
-          Stop spending hours drafting cold emails and chasing leads. Our AI-powered sales <br/> 
-          assistant does the heavy lifting for you — from writing personalized outreach to <br/>
+        <p className="text-sm font-normal text-base text-gray-600 mb-12 max-w-3xl mx-auto leading-[130%] tracking-[0px] text-center px-2 md:text-center md:px-6">
+          Stop spending hours drafting cold emails and chasing leads. Our AI-powered sales <br className='hidden md:block'/> 
+          assistant does the heavy lifting for you — from writing personalized outreach to <br className='hidden md:block'/>
           scheduling meetings directly in your calendar.
         </p>
 
         <div className="flex flex-row sm:flex-row gap-1 justify-center items-center">
-          <button  className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-4 md:px-8 md:py-4 rounded-full font-medium transition-colors">
+          <button  className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-3 md:px-8 md:py-4 rounded-full font-medium transition-colors">
             Let's talk
           </button>
-          <button className="border border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-4 md:px-8 md:py-4 rounded-full font-medium transition-colors">
+          <button className="border border-orange-500 text-orange-500 hover:bg-orange-50 px-5 py-3 md:px-8 md:py-4 rounded-full font-medium transition-colors">
             Learn more
           </button>
         </div>

@@ -15,33 +15,35 @@ return (
             />
           </div>
           
-          <p className="text-gray-600 mb-6 max-w-md">
-            Lorem ipsum dolor sit amet consectetur. Adipiscing 
-            egestas volutpat tincidunt tempor sit adipiscing tempor 
+          <p className="text-[14px] text-gray-600 mb-6 max-w-md">
+            Lorem ipsum dolor sit amet consectetur.<br className='block md:hidden '/> Adipiscing <br className='hidden md:block'/> 
+            egestas volutpat tincidunt semper<br className='block md:hidden'/> et adipiscing <br className='hidden md:block'/>
+            sagittis eget nunc. Ac tortor<br className='block md:hidden'/> sagittis condimentum <br className='hidden md:block'/>
             adipiscing. In sit.
           </p>
-          
+          <hr className="border-t border-gray-300 my-4 sm:mr-[42.6%]" />
           <div>
             <p className="text-gray-900 font-medium mb-2">Follow us:</p>
             <div className="flex space-x-3">
-<div className="w-8 h-8 bg-[#FAEBDC] rounded flex items-center justify-center">
-<span className="text-xs font-bold bg-gradient-to-r from-[#FE6037] via-[#77C6B3] to-[#3861F9] bg-clip-text text-transparent">Be</span>
+<div className="rounded-full w-10 h-10 bg-[#FAEBDC] rounded flex items-center justify-center">
+<span className="text-[20px] font-bold bg-gradient-to-r from-[#FE6037] via-[#77C6B3] to-[#3861F9] bg-clip-text text-transparent">Be</span>
 </div>
-<div className="w-8 h-8 bg-[#FAEBDC] rounded flex items-center justify-center">
-<span className="text-xs font-bold bg-gradient-to-r from-[#FE6037] via-[#77C6B3] to-[#3861F9] bg-clip-text text-transparent">in</span>
+<div className="rounded-full w-10 h-10 bg-[#FAEBDC] rounded flex items-center justify-center">
+<span className="text-[20px] font-bold bg-gradient-to-r from-[#FE6037] via-[#77C6B3] to-[#3861F9] bg-clip-text text-transparent">in</span>
 </div>
-<div className="w-8 h-8 bg-[#FAEBDC] rounded flex items-center justify-center">
-<span className="text-xs font-bold bg-gradient-to-r from-[#FE6037] via-[#77C6B3] to-[#3861F9] bg-clip-text text-transparent">G</span>
+<div className="rounded-full w-10 h-10 bg-[#FAEBDC] rounded flex items-center justify-center">
+<span className="text-[20px] font-bold bg-gradient-to-r from-[#FE6037] via-[#77C6B3] to-[#3861F9] bg-clip-text text-transparent">G</span>
 </div>
-<div className="w-8 h-8 bg-[#FAEBDC] rounded flex items-center justify-center">
-<span className="text-xs font-bold bg-gradient-to-r from-[#FE6037] via-[#77C6B3] to-[#3861F9] bg-clip-text text-transparent">G</span>
+<div className="rounded-full w-10 h-10 bg-[#FAEBDC] rounded flex items-center justify-center">
+<span className="text-[20px] font-bold bg-gradient-to-r from-[#FE6037] via-[#77C6B3] to-[#3861F9] bg-clip-text text-transparent">G</span>
 </div>
             </div>
           </div>
         </div>
 
         {/* Company Links */}
-        <div>
+        <div className='flex flex-row '>
+        <div className='mx-20 ml-0 sm:ml-[100%] '> 
           <h3 className="font-semibold text-gray-900 mb-4">Company</h3>
           <div className="space-y-3">
             <a href="#" className="block text-gray-600 hover:text-gray-900 transition-colors">Home</a>
@@ -60,13 +62,15 @@ return (
             <a href="#" className="block text-gray-600 hover:text-gray-900 transition-colors">Security</a>
           </div>
         </div>
+        </div>
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center">
+      
+      <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-start">
         <p className="text-gray-500 text-sm">Dark View © 2025. All rights reserved.</p>
         
-        <div className="flex space-x-6 mt-4 sm:mt-0">
+        <div className="flex space-x-6 mt-4 sm:mt-0 ">
           <a href="#" className="text-gray-500 hover:text-gray-700 text-sm transition-colors">Privacy policy</a>
           <a href="#" className="text-gray-500 hover:text-gray-700 text-sm transition-colors">GTC</a>
           <a href="#" className="text-gray-500 hover:text-gray-700 text-sm transition-colors">Imprint</a>

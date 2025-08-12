@@ -2,22 +2,22 @@ import React from 'react';
 
 const CTA = () => {
 return (
-  <section className="bg-orange-500  px-0 sm:px-0 lg:px-0 lg:mx-20 sm:mx-1 md:mx-1 xs:mx-2 rounded-xl overflow-hidden ">
+  <section className="bg-orange-500  px-0 sm:px-0 lg:px-0 mx-1 lg:mx-20 sm:mx-1 md:mx-1 xs:mx-2 rounded-xl overflow-hidden ">
     <div className="max-w-6xl mx-auto text-center">
-      <div className="inline-block bg-white text-orange-400 px-4 py-2 rounded-md text-sm font-medium mb-8">
+      <div className="inline-block bg-white text-orange-400 px-4 py-2 rounded-md text-sm font-medium mb-6 mt-8">
         READY TO ELEVATE
       </div>
       
-      <h2 className="text-4xl sm:text-5xl font-bold text-white mb-12">
+      <h2 className="font-satoshi text-3xl sm:text-4xl sm:text-5xl font-[500] text-white mb-12">
         Proceed toward your<br />
         next achievement
       </h2>
       
-      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-        <button className="bg-white text-orange-500 hover:bg-gray-100 px-8 py-4 rounded-full font-medium transition-colors">
+      <div className="flex flex-row sm:flex-row gap-1 justify-center items-center mb-12">
+        <button className="bg-white text-orange-500 hover:bg-gray-100 px-5 py-3 md:px-8 md:py-4 rounded-full font-medium transition-colors">
           Let's talk
         </button>
-        <button className="border border-white text-white hover:bg-white hover:text-orange-500 px-8 py-4 rounded-full font-medium transition-colors">
+        <button className="border border-white text-white hover:bg-white hover:text-orange-500 px-5 py-3 md:px-8 md:py-4 rounded-full font-medium transition-colors">
           Learn more
         </button>
       </div>
