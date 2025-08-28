@@ -14,6 +14,7 @@ const AuthPageTransition = ({ children }) => {
       gsap.set(transitionRef.current, { clearProps: "all" });
       return;
     }
+    
 
     // Reset styles before animation
     gsap.set(transitionRef.current, {
